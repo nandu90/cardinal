@@ -25,9 +25,9 @@
 | transfers/nek_postprocessor_value         | nek                                                                                          | ✅ Pass                          |                             |
 | transfers/nearest_point                   | nearest_point_receiver                                                                       | ✅ Pass                          |                             |
 | conduction/identical_interface/cube       | slab_conduction                                                                              | ✅ Pass                          |                             |
-| conduction/identical_interface/pyramid    | pyramid_conduction                                                                           | ✅ Pass                          | run using `--heavy`         |
-| conduction/boundary_and_volume/prism      | pyramid_exact<br>duplicate_temp<br>pyramid                                                   | ❌ Fail<br>✅ Pass<br>❌ Fail   | `gold` update required<br>PR #10 |
-| conduction/identical_volume/cube          | slab_heat_source                                                                             | ✅ Pass                          |                             |
+| conduction/identical_interface/pyramid    | pyramid_conduction                                                                           | ✅ Pass                          | Uncomment `heavy` to run    |
+| conduction/boundary_and_volume/prism      | pyramid_exact<br>duplicate_temp<br>pyramid                                                   | ✅ Pass <br>✅ Pass<br>✅ Pass    | Uncomment `heavy` to run<br> |
+| conduction/identical_volume/cube          | slab_heat_source                                                                             | ✅ Pass                          | Uncomment `heavy` to run    |
 | conduction/zero_flux                      | zero_flux_total<br>zero_flux_total_vpp<br>vpp_disjoint<br> vpp_disjoint_zero<br>mismatch_length<br>nodes_on_shared  | ✅ Pass<br>✅ Pass<br>✅ Pass<br>✅ Pass<br>✅ Pass<br>✅ Pass |                     |
 | conduction/nonidentical_interface/cylinders | cylinder_conduction<br>cylinder_conduction_subcycle<br>cylinder_conduction_reversed<br>cylinder_conduction_mini<br>cylinder_conduction_exact  | ✅ Pass<br>✅ Pass<br>✅ Pass<br>✅ Pass<br>✅ Pass | |
 | conduction/nonidentical_volume/nondimensional | cylinder_heat_source                                                                     | ✅ Pass             | |
